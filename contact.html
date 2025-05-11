@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-green-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <h1 class="text-2xl font-bold">BRSU</h1>
+                <p class="ml-2 text-sm hidden md:block">Bangladesh Rohingya Student Union</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-green-200">About</a></li>
+                    <li><a href="events.html" class="hover:text-green-200">Events</a></li>
+                    <li><a href="resources.html" class="hover:text-green-200">Resources</a></li>
+                    <li><a href="contact.html" class="hover:text-green-200 font-bold">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">Contact Us</h2>
+            <p class="text-lg mt-2">Get in touch with the BRSU team</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <section class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-6 text-green-700">Send Us a Message</h2>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium mb-1">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+                <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                    Thank you for your message! We will get back to you soon.
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h2 class="text-2xl font-bold mb-6 text-green-700">Contact Information</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Email</h3>
+                            <p class="text-gray-700">brsu578@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Phone</h3>
+                            <p class="text-gray-700">+1 503-765-4406</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Office Address</h3>
+                            <p class="text-gray-700">
+                                4257 SE 122nd Ave,<br>
+                                Portand,OR,<br>
+                                United States,Oregon
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Office Hours</h3>
+                            <p class="text-gray-700">
+                                Sunday - Thursday: 9:00 AM - 5:00 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Friday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-6 text-green-700">Connect With Us</h2>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center text-gray-700 hover:text-green-600">
+                            <span class="font-semibold">Facebook:</span>
+                            <span class="ml-2">https://www.facebook.com/share/1F1ASURYAH/</span>
+                        </a>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-green-600">
+                            <span class="font-semibold">Twitter:</span>
+                            <span class="ml-2">twitter.com/BRSU_official</span>
+                        </a>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-green-600">
+                            <span class="font-semibold">Instagram:</span>
+                            <span class="ml-2">instagram.com/brsu_official</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BRSU</h3>
+                    <p class="mb-4">Bangladesh Rohingya Student Union</p>
+                    <p>Empowering through education since 2020</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="events.html" class="hover:text-green-300">Events</a></li>
+                        <li><a href="resources.html" class="hover:text-green-300">Resources</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: info@brsu.org</p>
+                    <p class="mb-2">Phone: +880 1234 567890</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="hover:text-green-300">Facebook</a>
+                        <a href="#" class="hover:text-green-300">Twitter</a>
+                        <a href="#" class="hover:text-green-300">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

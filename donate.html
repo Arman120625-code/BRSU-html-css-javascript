@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-green-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <!-- Logo Space -->
+                <div class="mr-3">
+                    <img src="logo.jpeg" alt="BRSU Logo" class="h-12 w-auto" onerror="this.src='https://via.placeholder.com/48x48?text=BRSU'; this.onerror=null;">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">BRSU</h1>
+                    <p class="text-sm hidden md:block">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-green-200">About</a></li>
+                    <li><a href="events.html" class="hover:text-green-200">Events</a></li>
+                    <li><a href="resources.html" class="hover:text-green-200">Resources</a></li>
+                    <li><a href="contact.html" class="hover:text-green-200">Contact</a></li>
+                    <li><a href="donate.html" class="bg-yellow-500 text-white px-3 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold">Donate Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">Support Our Mission</h2>
+            <p class="text-lg mt-2">Your donation helps Rohingya students access education and resources</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Donation Information -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Why Donate to BRSU?</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Your generous donation to the Bangladesh Rohingya Student Union (BRSU) directly supports educational 
+                    opportunities for Rohingya students. We use donations to provide scholarships, educational materials, 
+                    mentorship programs, and community events that empower the next generation of Rohingya leaders.
+                </p>
+                
+                <h3 class="text-xl font-bold mb-3 text-green-700">Your Donation Supports:</h3>
+                <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+                    <li>Scholarships for promising students</li>
+                    <li>Educational resources and study materials</li>
+                    <li>Community workshops and skill development programs</li>
+                    <li>Cultural preservation initiatives</li>
+                    <li>Advocacy for educational rights</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Donation Options -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Ways to Donate</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- One-time Donation -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">One-time Donation</h3>
+                    <p class="text-gray-700 mb-4">Make a single contribution to support our programs and initiatives.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$25</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$50</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$100</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$250</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">Other</button>
+                    </div>
+                    <a href="#donation-form" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Donate Now</a>
+                </div>
+                
+                <!-- Monthly Giving -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Monthly Giving</h3>
+                    <p class="text-gray-700 mb-4">Become a sustaining supporter with a recurring monthly donation.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$10/mo</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$25/mo</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">$50/mo</button>
+                        <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">Other</button>
+                    </div>
+                    <a href="#donation-form" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Become a Supporter</a>
+                </div>
+                
+                <!-- Sponsor a Student -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Sponsor a Student</h3>
+                    <p class="text-gray-700 mb-4">Directly support a Rohingya student's educational journey.</p>
+                    <p class="text-gray-700 mb-4">Your sponsorship covers tuition, books, and educational supplies for one student.</p>
+                    <a href="#donation-form" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Sponsor Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Donation Form -->
+        <section id="donation-form" class="mb-12 scroll-mt-16">
+            <h2 class="text-3xl font-bold mb-6 text-green-800">Make a Donation</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <form id="donationForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="firstName" class="block text-gray-700 font-medium mb-1">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-gray-700 font-medium mb-1">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="donationType" class="block text-gray-700 font-medium mb-1">Donation Type</label>
+                        <select id="donationType" name="donationType" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            <option value="one-time">One-time Donation</option>
+                            <option value="monthly">Monthly Giving</option>
+                            <option value="sponsor">Sponsor a Student</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="amount" class="block text-gray-700 font-medium mb-1">Donation Amount</label>
+                        <input type="number" id="amount" name="amount" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-1">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition duration-300">Complete Donation</button>
+                    </div>
+                </form>
+                <div id="donationSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                    Thank you for your generous donation! Your support makes a difference in the lives of Rohingya students.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Impact Stories -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-green-800">Your Impact</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Fatima's Story</h3>
+                    <p class="text-gray-700 mb-4">
+                        "Thanks to a scholarship from BRSU, I was able to continue my education at Dhaka University. 
+                        I'm now studying International Relations and hope to work with humanitarian organizations to 
+                        support refugee communities. This opportunity has changed my life."
+                    </p>
+                    <p class="text-gray-600 italic">- Fatima, Scholarship Recipient</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Our Impact in Numbers</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center py-4">
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">150+</p>
+                            <p class="text-gray-700">Students Supported</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">25</p>
+                            <p class="text-gray-700">Scholarships Awarded</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">12</p>
+                            <p class="text-gray-700">Community Programs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BRSU</h3>
+                    <p class="mb-4">Bangladesh Rohingya Student Union</p>
+                    <p>Empowering through education since 2020</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="events.html" class="hover:text-green-300">Events</a></li>
+                        <li><a href="resources.html" class="hover:text-green-300">Resources</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: info@brsu.org</p>
+                    <p class="mb-2">Phone: +880 1234 567890</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="hover:text-green-300">Facebook</a>
+                        <a href="#" class="hover:text-green-300">Twitter</a>
+                        <a href="#" class="hover:text-green-300">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Donation form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const donationForm = document.getElementById('donationForm');
+            const donationSuccess = document.getElementById('donationSuccess');
+            
+            if (donationForm) {
+                donationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real application, you would process the payment here
+                    console.log('Donation submitted');
+                    
+                    // Show success message
+                    if (donationSuccess) {
+                        donationSuccess.classList.remove('hidden');
+                        donationForm.reset();
+                        
+                        // Scroll to success message
+                        donationSuccess.scrollIntoView({ behavior: 'smooth' });
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(function() {
+                            donationSuccess.classList.add('hidden');
+                        }, 5000);
+                    }
+                });
+            }
+            
+            // Amount button functionality
+            const amountButtons = document.querySelectorAll('.bg-green-100.text-green-800');
+            const amountInput = document.getElementById('amount');
+            
+            if (amountButtons.length > 0 && amountInput) {
+                amountButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const value = this.textContent.trim();
+                        
+                        if (value === 'Other') {
+                            amountInput.value = '';
+                            amountInput.focus();
+                        } else {
+                            // Extract the number from the button text (e.g., "$25" -> 25)
+                            const amount = value.replace(/[^0-9]/g, '');
+                            amountInput.value = amount;
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
